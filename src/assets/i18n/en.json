@@ -1,0 +1,446 @@
+{
+  "header": {
+    "title": "Themebau.",
+    "text": "Themebau is a stylish universal template for all your projects & creative output. Minimalistic and easy to use, it has everything you need to launch your website."
+  },
+  "navbarItems": {
+    "home": "home",
+    "project": "projects",
+    "pages": "pages",
+    "contact": "contact",
+    "purchase": "purchase"
+  },
+  "headerImg": [
+    {
+      "text": "main home"
+    },{
+      "text": "simple portfolio"
+    },{
+      "text": "creative agency"
+    },{
+      "text": "freelancer portfolio"
+    },{
+      "text": "interactive dark"
+    },{
+      "text": "digital agency"
+    },{
+      "text": "fullscreen slider"
+    },{
+      "text": "carousel light"
+    },{
+      "text": "carousel dark"
+    },{
+      "text": "interactive light"
+    },{
+      "text": "left menu"
+    }
+  ],
+  "description": {
+    "title": "Present your work in a unique way \uD83D\uDCAA",
+    "text": "Themebau has 1/2/3/4 columns layouts to showcase your work and collections. Choose between the 19 types of layouts to create your portfolio.",
+    "btn": "view pages",
+    "more": "and more... \uD83D\uDD25"
+  },
+  "projectShowCase": {
+    "title": "Projects Showcase"
+  },
+  "aboutUs": {
+    "title": "Practical Inner pages for everything you may need.",
+    "text": "Themebau is packed with a set of practical inner pages for various uses. Choose your favorites & customize them to your needs."
+  },
+  "menuStyle": {
+    "title": "Menu Styles"
+  },
+  "responsive": {
+    "title": "Fully responsive and retina ready \uD83D\uDC51",
+    "text": "Themebau is designed to look great on desktop computers, tablets and mobile devices. Every element 100% responsive & retina ready."
+  },
+  "aboutTexts": [
+    {
+      "text": "About Us"
+    },{
+      "text": "About Us V.2"
+    },{
+      "text": "About Me"
+    },{
+      "text": "Services"
+    },{
+      "text": "Single Service"
+    },{
+      "text": "Contact Us"
+    },{
+      "text": "Contact Us V.2"
+    },{
+      "text": "404 Page"
+    },{
+      "text": "Blog"
+    },{
+      "text": "Blog V.2"
+    },{
+      "text": "Single Service"
+    },{
+      "text": "Coming Soon"
+    }
+  ],
+  "menuTexts": [
+    {
+      "text": "Classic Menu"
+    },{
+      "text": "White Left Menu"
+    },{
+      "text": "Dark Center Menu"
+    },{
+      "text": "Left Menu"
+    }
+  ],
+  "featureTexts": [
+    {
+      "title": "bootstrap 4",
+      "text": "Themebau based on Bootstrap 4, so layout changes is so much easily."
+    },{
+      "title": "sass available",
+      "text": "Easy customization with SASS variables. You can change colors, typography and more."
+    },{
+      "title": "figma files included",
+      "text": "We provided a source Figma file with Themebau."
+    },{
+      "title": "modern design",
+      "text": "High usability, organizing content, fully responsive design as per latest design trends."
+    },{
+      "title": "customer support",
+      "text": "Themebau based on Bootstrap 4, so layout changes is so much easily."
+    },{
+      "title": "regular updates",
+      "text": "Lifetime reliable and regular updates with your purchase."
+    }
+  ],
+  "varietyTexts": [
+    [
+      {
+        "text": "11 Homepage variations"
+      },{
+        "text": "19 Portfolio styles & 6 Single Projects pages"
+      },{
+        "text": "4 Menu & 3 Footer styles"
+      },{
+        "text": "Creative Blog & Inner pages"
+      },{
+        "text": "100% Responsive & Retina ready"
+      }
+    ],
+    [
+      {
+        "text": "Gulp Tooling to automate the Workflow"
+      },{
+        "text": "W3C valid HTML"
+      },{
+        "text": "Easy customization via HTML classes & attributes"
+      },{
+        "text": "Smooth Animations"
+      },{
+        "text": "Smooth Parallax for images & videos"
+      }
+    ],
+    [
+      {
+        "text": "Developers ready: Webpack, Gulp, SCSS, Nunjucks, NPM"
+      },{
+        "text": "Google Fonts"
+      },{
+        "text": "Included generated HTML version (ready to use without developer tools)"
+      },{
+        "text": "Google Maps"
+      }
+    ]
+  ],
+  "varietyBtn": {
+    "text": "and more... \uD83D\uDD25"
+  },
+  "fullScreen": [
+    {
+      "text": "home",
+      "collapseItem": [
+        {
+          "text": "main home",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        },
+        {
+          "text": "simple portfolio",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        },
+        {
+          "text": "creative agency",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        },
+        {
+          "text": "freelancer portfolio",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        },
+        {
+          "text": "interactive dark",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        },
+        {
+          "text": "interactive light",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        },
+        {
+          "text": "left menu",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        },
+        {
+          "text": "digital agency",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        },
+        {
+          "text": "carousel dark",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        },
+        {
+          "text": "carousel light",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        },
+        {
+          "text": "fullscreen slider",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "projects",
+      "collapseItem": [
+        {
+          "text": "1 column",
+          "collapseItem": [
+            {
+              "text": "Style 1"
+            },
+            {
+              "text": "Style 2"
+            }
+          ]
+        },
+        {
+          "text": "2 column",
+          "collapseItem": [
+            {
+              "text": "Style 1"
+            },
+            {
+              "text": "Style 2"
+            },
+            {
+              "text": "Style 3"
+            },
+            {
+              "text": "Style 4"
+            },
+            {
+              "text": "Style 5"
+            },
+            {
+              "text": "Style 6"
+            }
+          ]
+        },
+        {
+          "text": "3 column",
+          "collapseItem": [
+            {
+              "text": "Style 1"
+            },
+            {
+              "text": "Style 2"
+            },
+            {
+              "text": "Style 3"
+            },
+            {
+              "text": "Style 4"
+            },
+            {
+              "text": "Style 5"
+            }
+          ]
+        },
+        {
+          "text": "4 column",
+          "collapseItem": [
+            {
+              "text": "Style 1"
+            },
+            {
+              "text": "Style 2"
+            },
+            {
+              "text": "Style 3"
+            },
+            {
+              "text": "Style 4"
+            }
+          ]
+        },
+        {
+          "text": "Single Works",
+          "collapseItem": [
+            {
+              "text": "Style 1"
+            },
+            {
+              "text": "Style 2"
+            },
+            {
+              "text": "Style 3"
+            },
+            {
+              "text": "Style 4"
+            },
+            {
+              "text": "Style 5"
+            },
+            {
+              "text": "Style 6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "pages",
+      "collapseItem": [
+        {
+          "text": "About Us",
+          "collapseItem": [
+            {
+              "text": "About Us"
+            },{
+              "text": "About Us 2"
+            },{
+              "text": "About Me"
+            }
+          ]
+        },
+        {
+          "text": "Services",
+          "collapseItem": [
+            {
+              "text": "Service"
+            },{
+              "text": "Single Service"
+            }
+          ]
+        },
+        {
+          "text": "Blog",
+          "collapseItem": [
+            {
+              "text": "3 column"
+            },{
+              "text": "1 column"
+            },{
+              "text": "Single Post"
+            }
+          ]
+        },
+        {
+          "text": "Coming Soon",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        },
+        {
+          "text": "404",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "contact",
+        "collapseItem": [
+        {
+          "text": "Contact 1",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        },{
+          "text": "Contact 2",
+          "collapseItem": [
+            {
+              "text": "no collapse"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fullScreenFooter": {
+    "contact": {
+      "title": "Contact Info",
+      "email": {
+        "title": "Email",
+        "em": " hello@themebau.com"
+      },
+      "phone": {
+        "title": "Phone",
+        "ph": " +1 202-358-0309"
+      }
+    },
+    "address": {
+      "title": "Address",
+      "adTop": "2260 Lady Bug Drive",
+      "adBottom": "New York, NY 10011"
+    }
+  }
+}

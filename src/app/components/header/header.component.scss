@@ -1,0 +1,80 @@
+@import "../../../assets/variables";
+.text-white-cos{
+  color: $header-text-color;
+}
+#header{
+  background-color: #0e0e0e;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  .container{
+    .scroll-ball{
+      margin-left: 60px;
+      .scroll-ball-img{
+        transition: transform 1.3s cubic-bezier(0.2, 1, 0.2, 1), -webkit-transform 1.3s cubic-bezier(0.2, 1, 0.2, 1);
+      }
+    }
+    .row.text{
+      margin-bottom: 100px;
+      .content{
+        .header-title{
+          font-weight: 400;
+          font-size: 7rem;
+          margin-top: -14px;
+          margin-bottom: 20px;
+        }
+        .header-description{
+            font-size: 18.2px;
+            line-height: 27px;
+        }
+      }
+    }
+    .row.images{
+      margin: -75px 0 0 -30px;
+      .header-img-container{
+        padding-top: 80px;
+        padding-left: 30px;
+        .card{
+          background-color: #0e0e0e;
+          border: 0;
+          .card-img{
+            transition: transform .7s cubic-bezier(.2, 1, .2, 1);
+            border: 1px solid #202020;
+            border-top: 0;
+            .mac-navbar{
+              width: 100.3%;
+              margin-left: -1px;
+              height: 14px;
+              background-color: $dark-mac-navbar-bg;
+              border-radius: 3px 3px 0 0;
+              position: relative;
+            }
+            .mac-navbar-icon{
+              position: absolute;
+              display: flex;
+              top: 6px;
+              left: 9px;
+              width: 4px;
+              height: 4px;
+              color: $dark-mac-navig-color;
+              background-color: $dark-mac-navig-color;
+              box-shadow: 7px 0 0 currentColor, 14px 0 0 currentColor;
+              border-radius: 50px;
+            }
+          }
+          .card-body{
+            .card-title{
+              display: block;
+              margin-top: 28px;
+              margin-bottom: 0px;
+            }
+          }
+        }
+        .card:hover{
+          .card-img{
+            transform: translateY(-20px);
+          }
+        }
+      }
+    }
+  }
+}

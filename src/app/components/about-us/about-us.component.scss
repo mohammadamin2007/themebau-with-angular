@@ -1,0 +1,80 @@
+@import "../../../assets/variables";
+#about-us{
+  background-color: $about-us-bg;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  .container{
+    .about-us-title{
+      margin-bottom: 90px;
+      margin-left: -30px;
+      .column{
+        padding-left: 30px;
+      }
+      .title{
+        h3{
+          color: $about-us-title-color;
+          margin-top: -9px;
+        }
+      }
+      .text{
+        p{
+          color: $about-us-des-color;
+          font-size: 18px;
+          margin-top: -6px;
+        }
+      }
+    }
+    .about-us-portfolio{
+      margin-top: -60px;
+      margin-left: -30px;
+      .about-us-pic{
+        padding-top: 60px;
+        padding-left: 30px;
+        .about-us-card{
+          border: none;
+          .card-img{
+            border: 1px solid #e2e2e2;
+            border-top: 0 solid black;
+            transition: transform .7s cubic-bezier(.2, 1, .2, 1),-webkit-transform .7s cubic-bezier(.2, 1, .2, 1);
+            box-shadow: 0 2px 20px rgb(0 0 0 / 22%);
+            .mac-navbar-about{
+              width: 100.4%;
+              margin-left: -1px;
+              height: 14px;
+              border-right: 1px solid #e2e2e2;
+              border-top: 1px solid #e2e2e2;
+              border-left: 1px solid #e2e2e2;
+              background-color: $light-mac-navbar-bg;
+              border-radius: 3px 3px 0 0;
+              position: relative;
+            }
+            .mac-navbar-icon-about{
+              position: absolute;
+              display: flex;
+              top: 5px;
+              left: 8px;
+              width: 4px;
+              height: 4px;
+              color: $light-mac-navig-color;
+              background-color: $light-mac-navig-color;
+              box-shadow: 7px 0 0 currentColor, 14px 0 0 currentColor;
+              border-radius: 50px;
+            }
+          }
+          .card-body{
+            margin-top: 28px;
+            margin-bottom: 0px;
+            .card-title{
+              color: $about-us-text-color;
+            }
+          }
+        }
+        .about-us-card:hover{
+          .card-img{
+            transform: translateY(-20px);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "../../../assets/variables";
+#navbar-mobile{
+  z-index: 500;
+  height: 0;
+  background-color: $mobile-nav-color;
+  transition: transform 1s cubic-bezier(0.2, 1, 0.2, 1), height 0.5s cubic-bezier(0.2, 1, 0.2, 1);;
+  .navbar{
+    height: 5.65rem !important;
+    .container{
+      .navbar-brand{
+        transform: translateY(-3px);
+      }
+      .purchase{
+        padding: 15px 40px;
+        margin-right: 40px;
+        font-size: 17px !important;
+        font-weight: 500;
+        background-color: $ball-btn-light-bg;
+        .purchase-ball{
+          margin-left: 20px;
+          background-color: #0e0e0e;
+          height: 6px;
+          width: 6px;
+          border-radius: 100%;
+        }
+      }
+      .purchase-replace{
+        margin-right: 40px;
+      }
+      .purchase:hover{
+        .purchase-ball{
+          animation: ball-btns-animated 0.3s infinite alternate cubic-bezier(0.2, 1, 0.3, 0.92);
+        }
+      }
+      .navbar-toggle{
+        span {
+          width: 24px;
+          height: 2px;
+          margin-bottom: 3px;
+          margin-top: 3px;
+          background-color: $toggler-color;
+          transition: transform .2s ease-in-out,opacity .2s ease-in-out,width .2s ease-in-out;
+        }
+        span:last-child{
+          width: 12px;
+        }
+      }
+      .navbar-toggle:hover {
+        span:last-child{
+          width: 24px;
+        }
+      }
+    }
+  }
+}
+#navbar-mobile.navbar-scrolled{
+  height: 6.65rem !important;
+}
+#navbar-mobile.navbar-hide{
+  transform: translateY(-6rem);
+}

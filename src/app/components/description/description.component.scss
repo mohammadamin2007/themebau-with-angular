@@ -1,0 +1,105 @@
+@import "../../../assets/variables";
+// keyframes
+@keyframes ball-btns-animated {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-14px);
+  }
+}
+//style
+#themebau-description{
+  padding-top: 160px;
+  padding-bottom: 160px;
+  .container{
+    margin-top: -38px;
+    .main-description{
+      margin-left: -30px;
+      margin-right: 0;
+      margin-bottom: 100px;
+      .col-12, .spacer{
+        padding-top: 40px;
+        padding-left: 30px;
+      }
+      .img-container{
+        .top-img, .bottom-img{
+          box-shadow: 0 2px 20px rgb(0 0 0 / 8%);
+        }
+        .top-img{
+          margin-top: -.5px;
+          margin-bottom: 30px;
+        }
+        .bottom-img{
+          width: 370px;
+          align-self: end;
+          @media (min-width: 1024px){
+            margin-right: -100px!important;
+          }
+          @media (min-width: 1024px){
+            margin-top: -70px!important;
+          }
+        }
+      }
+      .text-container{
+        .description-title{
+          color: $des-title-color;
+          margin-bottom: 40px;
+          @media (min-width: 1024px) {
+            margin-left: -100px;
+          }
+        }
+        .description-text{
+          @media (min-width: 1024px){
+            margin-top: -2px;
+          }
+          color: $des-text-color;
+          line-height: 27px;
+          margin-bottom: 3.0588235294em;
+          font-size: 19px;
+        }
+      }
+      .view-ball-container {
+        .view-ball{
+          padding: 15px 40px;
+          font-size: 17px !important;
+          background-color: $ball-btn-dark-bg;
+          font-weight: 500;
+          .ball{
+            margin-left: 20px;
+            background-color: $ball-btn-dark-color;
+            height: 6px;
+            width: 6px;
+            border-radius: 100%;
+          }
+        }
+        .view-ball:hover{
+          .ball{
+            animation: ball-btns-animated 0.3s infinite alternate cubic-bezier(0.2, 1, 0.3, 0.92);
+          }
+        }
+      }
+    }
+    .description-models{
+      margin-right: 0;
+      margin-left: -30px;
+      margin-top: -30px;
+      .bau-description-layout{
+        max-height: 100%;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 0;
+      }
+    }
+    .fire-text-container{
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 10px;
+      margin-top: 40px;
+      .fire-text{
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+  }
+}

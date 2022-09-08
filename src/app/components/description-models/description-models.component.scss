@@ -1,0 +1,39 @@
+@import "../../../assets/variables";
+.bau-description-svg{
+  border-radius: 3% 3% 0 0;
+  border-top-width: initial;
+  border-top-style: none;
+  border-top-color: initial;
+  border-bottom: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+  transition: transform 0.7s cubic-bezier(0.2, 1, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.2, 1, 0.2, 1);
+  .mac-navbar-light{
+    width: 100%;
+    height: 14px;
+    border-right: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    background-color: $light-mac-navbar-bg;
+    border-radius: 3px 3px 0 0;
+    position: relative;
+  }
+  .mac-navbar-icon-light{
+    position: absolute;
+    display: flex;
+    top: 5px;
+    left: 8px;
+    width: 4px;
+    height: 4px;
+    color: $light-mac-navig-color;
+    background-color: $light-mac-navig-color;
+    box-shadow: 7px 0 0 currentColor, 14px 0 0 currentColor;
+    border-radius: 50px;
+  }
+  .card-img{
+    padding: 18px;
+  }
+}
+.bau-description-svg:hover{
+  transform: translateY(-19px);
+}

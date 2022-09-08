@@ -1,0 +1,54 @@
+@import "../../../assets/variables";
+#themebau-variety{
+  background-color: $variety-bg-color;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  .scroll-ball{
+    margin-top: -130px;
+    transition: transform 1.3s cubic-bezier(0.2, 1, 0.2, 1), -webkit-transform 1.3s cubic-bezier(0.2, 1, 0.2, 1);
+    .scroll-ball-img{
+      margin-right: -60px;
+      margin-top: -160px;
+    }
+  }
+  .container{
+    .features-columns{
+      margin-left: -30px;
+      margin-top: -30px;
+      .themebau-variety-col{
+        padding-left: 30px;
+        padding-top: 20px;
+        .themebau-variety-item{
+          margin-top: 25px !important;
+          margin-left: -20px;
+          .variety-icon{
+            padding: 0;
+            padding-left: 20px !important;
+          }
+          .variety-text{
+            padding: 0;
+            padding-left: 20px !important;
+            .text{
+              color: $variety-text-color;
+              line-height: 27px;
+              margin-bottom: 5px;
+              padding-right: 18px;
+            }
+          }
+        }
+      }
+    }
+    .features-columns *{
+      transform: translate3d(0,0,0);
+    }
+    .bau-variety-footer{
+      margin-top: 70px;
+      margin-bottom: -8px;
+      padding-top: 3px;
+      a{
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@import "../../../assets/variables";
+#menu-style{
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-color: #0e0e0e;
+  .container{
+    .menu-style-title{
+      color: $menu-style-color;
+      margin-top: -10px;
+      margin-bottom: 70px;
+    }
+    .row{
+      .slider{
+        padding-top: 20px;
+        .slider-body{
+          .slider-img{
+            .demo-card{
+              border: none;
+              background-color: #0e0e0e !important;
+              span{
+                transition: transform .7s cubic-bezier(.2, 1, .2, 1),-webkit-transform .7s cubic-bezier(.2, 1, .2, 1);
+                .mac-navbar-menu-style{
+                  width: 100%;
+                  height: 14px;
+                  background-color: $dark-mac-navbar-bg;
+                  border-radius: 3px 3px 0 0;
+                  position: relative;
+                }
+                .mac-navbar-icon-menu-style{
+                  position: absolute;
+                  display: flex;
+                  top: 6px;
+                  left: 9px;
+                  width: 4px;
+                  height: 4px;
+                  color: $dark-mac-navig-color;
+                  background-color: $dark-mac-navig-color;
+                  box-shadow: 7px 0 0 currentColor, 14px 0 0 currentColor;
+                  border-radius: 50px;
+                }
+                .card-img{
+                  img{
+                    border: 1px solid #242424;
+                    border-top: none;
+                    width: 300px;
+                  }
+                }
+              }
+              .card-body{
+                margin-top: 28px;
+              }
+            }
+            .demo-card:hover{
+              span{
+                transform: translateY(-20px);
+              }
+            }
+          }
+        }
+        .slider-indicator-menu-style{
+          position: static;
+          width: 370px;
+          max-width: 100%;
+          height: 3px;
+          margin: 85px auto 0;
+          border-radius: 0;
+          background-color: rgba(255,255,255,.1);
+          .indicator-line{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            background: white;
+            border-radius: 10px;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}

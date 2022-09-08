@@ -1,0 +1,27 @@
+<section id="themebau-description">
+  <div class="container px-sm-0">
+    <div class="row main-description align-items-center">
+      <div class="img-container col-12 col-lg-5 d-flex flex-column pe-0">
+        <img src="assets/demo-1-940-602.jpg" class="w-100 top-img" alt="top-img">
+        <img src="assets/demo-2-740-560.jpg" class="mw-100 bottom-img" alt="bottom-img">
+      </div>
+      <div class="spacer col-lg-2 d-none d-lg-flex"></div>
+      <div class="text-container col-12 col-lg-4 pe-0 d-flex flex-column">
+        <h3 class="description-title">{{'description.title'| translate}}</h3>
+        <p class="description-text">{{ 'description.text'|translate }}</p>
+        <div class="view-ball-container">
+          <a href="#" class="view-ball text-decoration-none text-white d-inline-block">
+            {{ 'description.btn' | translate }}
+            <span class="ball d-inline-block"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="description-models row flex-row justify-content-center">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bau-description-layout" *ngFor="let layout of descriptionLayoutsList; let i = index" app-description-models [i]="i" [path]="layout.path" [color]="layout.color"></div>
+    </div>
+    <div class="fire-text-container row text-center">
+      <a href="#" class="fire-text text-decoration-none text-black">{{'description.more'|translate}}</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+<section id="header">
+  <div class="container p-sm-0">
+    <div class="scroll-ball d-xl-flex position-absolute top-0 d-none">
+      <svg class="scroll-ball-img" data-rellax-speed="1" width="500" height="318" viewBox="0 0 500 318" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translateY(-18px)" [ngStyle]="{'transform': 'translateY(-'+ scrollService.headerScrollBall + 'px)'}">
+        <circle cx="250" cy="68" r="250" fill="#202020"></circle>
+      </svg>
+    </div>
+    <div class="row text justify-content-center mx-0" style="transform: translateY(0px)">
+      <div class="content col-12 col-lg-8 col-xl-6 py-0 px-0">
+        <div class="header-title display-4 text-white-cos text-center text-break">{{ 'header.title' | translate}}</div> <!-- tyle="transform: translateY(10px); transition-duration: 500ms; opacity: 0"-->
+        <div class="header-description text-center text-white-cos"> <!-- tyle="transform: translateY(10px); transition-duration: 500ms; opacity: 0" -->
+          {{ 'header.text'| translate}}
+        </div>
+      </div>
+    </div>
+    <div class="row images">
+      <div *ngFor="let headerImg of headerImgList; let i = index" class="header-img-container col-12 col-md-6 col-lg-4 pe-0"> <!--style="transform: translateY(10px);transition-duration: 500ms; opacity: 0" -->
+        <a href="#" class="card card-demo text-decoration-none">
+          <span class="card-img">
+            <div class="mac-navbar">
+              <div class="mac-navbar-icon"></div>
+            </div>
+            <img src="{{ headerImg.path }}" alt="{{ trans.headerImgText[i]?.['text'] }}" class="w-100">
+          </span>
+          <span class="card-body p-0">
+            <div class="card-title h5 text-white-cos text-center" i18n="header">{{ trans.headerImgText[i]?.['text'] }}</div>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

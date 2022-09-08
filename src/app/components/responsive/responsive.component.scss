@@ -1,0 +1,26 @@
+@import "../../../assets/variables";
+#responsive{
+  padding-top: 70px;
+  background-color: $responsive-bg-color;
+  .container{
+    .row{
+      .responsive-img{
+          margin-bottom: -60px;
+      }
+      .responsive-text{
+        padding-top: 100px;
+        padding-bottom: 60px;
+        @media (min-width: 1024px) {
+          padding-bottom: 160px;
+        }
+        .responsive-title{
+          color: $responsive-title-color;
+        }
+        .responsive-description{
+          font-size: 17px;
+          color: $responsive-text-color;
+        }
+      }
+    }
+  }
+}

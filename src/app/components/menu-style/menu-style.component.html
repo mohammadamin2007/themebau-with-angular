@@ -1,0 +1,33 @@
+<section id="menu-style" class="text-center">
+  <div class="container p-sm-0">
+    <h2 class="menu-style-title">
+      {{ 'menuStyle.title'| translate }}
+    </h2>
+    <div class="row me-lg-0 ms-lg-0">
+      <div class="slider pe-0 ps-0" style="transition-duration: 800ms; transform: translateX(0px); overflow: hidden">
+        <div class="slider-body d-flex" style="cursor: grab; transform: translateX(0px);">
+          <div class="slider-img d-flex" *ngFor="let menuItem of menuStyleList; let i = index" >
+            <a href="#" class="card demo-card slider-img-link d-flex bg-dark default-text-color-white text-decoration-none" style="margin-right: 30px;">
+              <span>
+                <div class="mac-navbar-menu-style">
+                  <div class="mac-navbar-icon-menu-style"></div>
+                </div>
+                <span class="card-img">
+                  <img [src]="menuItem.path" alt="menu-style-img">
+                </span>
+              </span>
+              <div class="card-body p-0">
+                <span class="card-title text-white">
+                  <h5 class="mb-0">{{ trans.menuTexts[i]?.['text'] }}</h5>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="slider-indicator-menu-style show-on-scroll" style="transition-duration: 800ms; transition-delay: 100ms; transform: translateX(0px);">
+          <div class="indicator-line" style="width: 275.349px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

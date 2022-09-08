@@ -1,0 +1,23 @@
+<section id="navbar-mobile" class="position-fixed fixed-top d-lg-none d-flex" [ngStyle]="{'margin-right': scrollService.marginRight}" [ngClass]="{'navbar-hide': scrollService.navbarHide, 'navbar-scrolled': scrollService.navbarScroll}">
+  <nav class="navbar navbar-dark w-100 mt-3">
+    <div class="container p-sm-0 d-flex">
+      <div class="navbar-brand">
+        <a href="#">
+          <img src="assets/logo-white.svg" alt="logo-SVG">
+        </a>
+      </div>
+      <a href="#" class="purchase nav-link d-none d-sm-inline-block ms-auto">
+        {{ 'navbarItems.purchase' | translate }}
+        <span class="purchase-ball d-inline-block"></span>
+      </a>
+      <a href="#" class="purchase-replace d-flex d-sm-none nav-link ms-auto text-white">
+        {{ 'navbarItems.purchase' | translate }}
+      </a>
+      <a style="cursor:pointer;" class="navbar-toggle d-flex flex-column justify-content-end" (click)="openNavbar()">
+        <span></span>
+        <span></span>
+        <span class="align-self-end"></span>
+      </a>
+    </div>
+  </nav>
+</section>

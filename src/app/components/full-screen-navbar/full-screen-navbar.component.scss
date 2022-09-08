@@ -1,0 +1,151 @@
+@import "../../../assets/variables";
+.text-white-cos{
+  color: $full-navbar-color;
+}
+#fullscreen-navbar{
+  transition: opacity 366ms;
+  z-index: 1000;
+  background-color: #0e0e0e;
+  overflow-X: hidden !important;
+  .navbar-head{
+    margin-bottom: 50px;
+    height: 5.65rem;
+    background-color: #0e0e0e;
+    .container{
+      .navbar-brand{
+        padding-bottom: 4px;
+      }
+      .navbar-toggle{
+        span {
+          width: 24px;
+          height: 2px;
+          margin-bottom: 3px;
+          margin-top: 3px;
+          background-color: white;
+          transition: transform .2s ease-in-out,opacity .2s ease-in-out,width .2s ease-in-out;
+        }
+        transform: translateY(4.5px);
+      }
+      .activated{
+        span:first-child{
+          transform: rotate(-45deg) translate(-3px, 9px);
+        }
+        span:nth-child(2){
+          opacity: 0;
+        }
+        span:last-child{
+          transform: rotate(45deg) translate(-2px, -8px);
+        }
+      }
+    }
+  }
+  .navbar-content{
+    margin-bottom: 50px;
+    .row{
+      margin-left: -30px;
+      .column{
+        padding-left: 30px;
+      }
+      .navbar-navigation-container{
+        .navbar-navig{
+          margin-top: -6px;
+          .navbar-nav{
+            @media (min-width: 828px) {
+              font-size: 70px;
+            }
+            margin-top: -3px;
+            margin-bottom: -3px;
+            font-size: 34px;
+            line-height: 1.46;
+            .nav-item{
+              .nav-link{
+                padding-top: 3px;
+                padding-bottom: 3px;
+                font-weight: 500;
+                span{
+                  color: $full-navbar-color;
+                  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+                }
+              }
+              .nav-link.text-gray{
+                span{
+                  color: $full-navbar-hover;
+                }
+              }
+              .nav-link:hover{
+                span{
+                  color: $full-navbar-color !important;
+                }
+              }
+              .collapse-menu{
+                padding: 5px 0;
+                .navbar-nav{
+                  font-size: 16px;
+                  line-height: 2;
+                  .nav-item{
+                    .nav-link{
+                      font-weight: 500;
+                      padding-top: 3px;
+                      padding-bottom: 3px;
+                      span{
+                        color: $full-navbar-color;
+                        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+                      }
+                      .collapse-icon{
+                        transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+                      }
+                      .collapse-icon.rotate{
+                        transform: rotate(90deg);
+                      }
+                    }
+                    .nav-link.text-gray{
+                      span{
+                        color: $full-navbar-hover;
+                      }
+                    }
+                    .nav-link:hover{
+                      span{
+                        color: $full-navbar-color !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer{
+        .fullScreen-navbar-footer{
+          margin-top: 33px;
+          .content{
+            margin-bottom: 60px;
+            .title{
+              margin-bottom: 17px;
+              font-weight: 500;
+            }
+          }
+          .contact, .address{
+            .list-group{
+              .list-group-item{
+                font-size: 18px;
+                border: none;
+                background-color: #0e0e0e;
+              }
+            }
+          }
+          .social{
+            margin: -9px -9px 0;
+            .nav-item{
+              .nav-link{
+                width: 35px;
+                max-width: 100%;
+                height: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

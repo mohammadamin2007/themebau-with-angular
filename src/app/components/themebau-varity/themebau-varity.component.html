@@ -1,0 +1,28 @@
+<section id="themebau-variety" class="overflow-hidden position-relative">
+  <div class="scroll-ball position-absolute d-flex top-0 end-0 d-none d-xl-flex" [ngStyle]="{'transform': 'translateY('+ scrollService.varietyScrollBall +'px'}">
+    <svg class="scroll-ball-img" width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(0px, -314px, 0px);">
+      <circle cx="320" cy="320" r="320" fill="#202020"></circle>
+    </svg>
+  </div>
+  <div class="container d-flex flex-column px-sm-0">
+    <div class="row features-columns">
+      <div *ngFor="let varietyColumn of trans.varietyTexts" class="themebau-variety-col d-flex flex-column flex-wrap col-12 col-md-6 col-lg-4 pe-0">
+        <div *ngFor="let varietyItem of varietyColumn" class="row flex-wrap flex-row themebau-variety-item me-0">
+          <div class="variety-icon col-auto">
+            <svg class="mt-n4" width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.5 1L12.1265 6.26604L18 7.11567L13.75 11.2124L14.753 17L9.5 14.266L4.247 17L5.25 11.2124L1 7.11567L6.8735 6.26604L9.5 1Z" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div class="variety-text text-start col">
+            <h6 class="text">{{ varietyItem?.['text'] }}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bau-variety-footer row text-center me-0 ms-0">
+      <a href="#" class="text-decoration-none text-white">
+        {{ 'varietyBtn.text' | translate }}
+      </a>
+    </div>
+  </div>
+</section>

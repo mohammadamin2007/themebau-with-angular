@@ -1,0 +1,79 @@
+<!-- change language select -->
+<div class="select position-sticky fixed-top w-100">
+    <a (click)="changeLangCo.toggle()" style="cursor:pointer;" class=" title text-decoration-none text-white h4 mb-0 d-flex justify-content-between w-100">
+      {{ translate.currentLang == 'fa'? 'فارسی': 'English'}}
+      <svg class="collapse-icon align-self-center" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </a>
+    <div #changeLangCo="ngbCollapse" [(ngbCollapse)]="openLangList" class="option-container collapse flex-column">
+      <a style="cursor:pointer;"  class="text-decoration-none text-white d-flex" (click)="changeLangCo.toggle()" (mousedown)="changeLang('en')">
+        <span class="align-self-center">English</span>
+      </a>
+      <a style="cursor: pointer"  class="text-decoration-none text-white d-flex" (click)="changeLangCo.toggle()" (mousedown)="changeLang('fa')">
+        <span class="align-self-center">فارسی</span>
+      </a>
+    </div>
+</div>
+<!-- change language select -->
+<!-- navbar-start -->
+<app-navbar></app-navbar>
+<!-- navbar-end -->
+<!-- navbar-mobile-start -->
+<app-mobile-navbar (openFullNavbar)="navbarOpeningOp()"></app-mobile-navbar>
+<!-- navbar-mobile-end -->
+<!-- main-start -->
+<main>
+  <!-- header-start -->
+  <app-header></app-header>
+  <!-- header-end -->
+  <!-- description-start -->
+  <app-description></app-description>
+  <!-- description-end -->
+  <!-- project-show-case-start -->
+  <app-project-show-case></app-project-show-case>
+  <!-- project-show-case-end -->
+  <!-- about-us-start -->
+  <app-about-us></app-about-us>
+  <!-- about-us-end -->
+  <!-- menu-style-start -->
+  <app-menu-style></app-menu-style>
+  <!-- menu-style-end -->
+  <!-- responsive-start -->
+  <app-responsive></app-responsive>
+  <!-- responsive-end -->
+  <!-- features-start -->
+  <app-themebau-features></app-themebau-features>
+  <!-- features-end -->
+  <!-- variety-start -->
+  <app-themebau-varity></app-themebau-varity>
+  <!-- variety-end -->
+</main>
+<!-- main-end -->
+<!-- footer-start -->
+<footer #footer id="footer">
+  <div class="container p-lg-0 text-md-start text-center">
+    <div class="row me-0 ms-0 align-items-center justify-content-center justify-content-md-between ">
+      <div class="link-img col-md-10 me-md-auto pe-0 ps-0">
+        <div  class="link-img-container position-relative" > <!-- (mousemove)="linkImgFunction($event)" (mouseenter)="showImg = true" (mouseleave)="showImg = false"-->
+          <img src="assets/themebau-460-520.jpg" class="img-link-img opacity-0" alt="img-link-img" width="230"> <!-- [ngClass]="{'opacity-100': showImg, 'opacity-0': !showImg}" [ngStyle]="{'transform': 'matrix(1, 0, 0, 1,'+left+','+top+')'}" -->
+          <a href="#" class="nav-link display-4 d-flex flex-wrap">
+            <u class="text-decoration-none text-break">{{ "get themebau" | titlecase }}</u>
+          </a>
+        </div>
+      </div>
+      <div class="navigation col pe-0 ps-0">
+        <a href="#" class="btn btn-clean">
+          <svg class="icon-arrow" width="69" height="30" viewBox="0 0 69 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M54 2L67 15L54 28" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M17 15L67 15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer-end -->
+<!-- fullscreen-navbar -->
+<app-full-screen-navbar [navbarOpen]="navbarOpen" (changeStatusNavbarOpen)="navbarOpen = false" (changeStatusShowNav)="showFullNavbar = false" [showFullNavbar]="showFullNavbar"></app-full-screen-navbar>
+<!-- fullscreen-navbar -->

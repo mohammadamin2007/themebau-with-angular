@@ -1,0 +1,31 @@
+<section id="about-us">
+  <div class="container p-sm-0">
+    <div class="row about-us-title me-0">
+      <div class="column col-lg-1 pe-0"></div>
+      <div class="column col-lg-5 col-xl-4 title pe-0">
+        <h3>{{'aboutUs.title'|translate}}</h3>
+      </div>
+      <div class="column col-lg-2 d-none d-xl-block pe-0"></div>
+      <div class="column col-lg-5 col-xl-4 text pe-0">
+        <p class="mb-0">{{'aboutUs.text'|translate}}</p>
+      </div>
+    </div>
+    <div class="row about-us-portfolio me-0 text-center">
+      <div class="about-us-pic col-6 col-sm-6 col-md-4 col-lg-3 pe-0" *ngFor="let aboutUsPic of aboutUsPicList; let i = index">
+        <a href="#" class="card about-us-card text-decoration-none">
+          <span class="card-img">
+            <div class="mac-navbar-about">
+              <div class="mac-navbar-icon-about"></div>
+            </div>
+            <img [src]="aboutUsPic.path" alt="about-us-pic" class="w-100">
+          </span>
+          <span class="card-body p-0">
+            <span class="card-title h5 text-center">
+              {{ trans.aboutTexts[i]?.['text'] }}
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

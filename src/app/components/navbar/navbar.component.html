@@ -1,0 +1,137 @@
+<script src="../../app.component.spec.ts"></script>
+<section id="navbar" class="navbar-expand-lg d-lg-flex d-none position-fixed w-100"
+         [ngClass]="{'navbar-scrolled': scrollService.navbarScroll
+         , 'navbar-hide': scrollService.navbarHide}
+">
+  <nav class="navbar-dark w-100 navbar py-0">
+    <div class="container p-sm-0">
+      <div class="navbar-brand">
+        <a>
+          <img src="assets/logo-white.svg" alt="logo-SVG">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav nav">
+          <li class="main-nav-item d-flex"  (mouseenter)="navLinkEnter(0)"  (mouseleave)="navLinkLeave()">
+            <a href="#" class="nav-link main-nav-link d-flex justify-content-center h-100" [ngClass]="{ 'text-white': navbarItems[0].white, 'navbarHover': !navbarItems[0].white }">
+              <span class="align-self-center">{{ 'navbarItems.home' | translate }}</span>
+            </a>
+            <div class="dropdown-menu main-drop-menu w-100 b-dropdown d-flex">
+              <div class="container">
+                <ul class="navbar-nav d-flex flex-wrap">
+                  <li *ngFor="let dropDown Of bigDropDownList;let i = index" class="nav-item col-lg-3 col-xl-2">
+                    <a href="#" class="nav-link text-decoration-none">
+                      <div class="drop-img">
+                        <img src="{{ dropDown.src }}" alt="drop-img" class="w-100">
+                      </div>
+                      <div class="drop-link d-flex text-start">
+                        <p class="nav-link p-0 m-0 text-white">{{ trans.headerImgText[i]?.['text'] }}</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="main-nav-item d-flex dropdown"  (mouseenter)="navLinkEnter(1)"  (mouseleave)="navLinkLeave()">
+            <a href="#" class="nav-link main-nav-link d-flex justify-content-center h-100" [ngClass]="{ 'text-white': navbarItems[1].white, 'navbarHover': !navbarItems[1].white }">
+              <span class="align-self-center">{{ 'navbarItems.project'| translate }}</span>
+            </a>
+            <div class="dropdown-menu main-dropdown-menu d-flex flex-column">
+              <ul class="nav navbar-nav flex-column d-flex w-100">
+                <li *ngFor="let dropdown of normalDropdownList[0]; let i = index"
+                    class="nav-item d-flex w-100"
+                    [ngClass]="{'dropdown': dropdown.isDropdown}"
+                    (mouseenter)="dropdownLinkHover(0, i)"
+                    (mouseleave)="dropdownLinkReset(0, i)"
+                >
+                  <a href="#" class="nav-link d-flex w-100" [ngClass]="{'text-white': dropdown.linkHovered}">
+                    {{ trans.fullScreenNavbarTexts[1]?.['collapseItem']?.[i]?.['text'] }}
+                    <span class="navigation-icon ms-auto" *ngIf="dropdown.isDropdown">
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </span>
+                  </a>
+                  <div *ngIf="dropdown.isDropdown" class="dropdown-menu show side-dropdown">
+                    <ul class="navbar-nav nav">
+                      <li *ngFor="let dropdownItem of dropdown.dropdown;let y = index" class="nav-item w-100">
+                        <a href="#" class="nav-link w-100 d-flex">{{ trans.fullScreenNavbarTexts[1]?.['collapseItem']?.[i]?.['collapseItem']?.[y]?.['text'] }}</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-nav-item d-flex dropdown"  (mouseenter)="navLinkEnter(2)"  (mouseleave)="navLinkLeave()">
+            <a href="#" class="nav-link main-nav-link d-flex justify-content-center h-100" [ngClass]="{ 'text-white': navbarItems[2].white, 'navbarHover': !navbarItems[2].white }">
+              <span class="align-self-center">{{ 'navbarItems.pages'| translate }}</span>
+            </a>
+            <div class="dropdown-menu main-dropdown-menu d-flex flex-column">
+              <ul class="nav navbar-nav flex-column d-flex w-100">
+                <li *ngFor="let dropdown of normalDropdownList[1]; let i = index"
+                    class="nav-item d-flex w-100"
+                    [ngClass]="{'dropdown': dropdown.isDropdown}"
+                    (mouseenter)="dropdownLinkHover(1, i)"
+                    (mouseleave)="dropdownLinkReset(1, i)"
+                >
+                  <a href="#" class="nav-link d-flex w-100" [ngClass]="{'text-white': dropdown.linkHovered}">
+                    {{ trans.fullScreenNavbarTexts[2]?.['collapseItem']?.[i]?.['text'] }}
+                    <span class="navigation-icon ms-auto" *ngIf="dropdown.isDropdown">
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </span>
+                  </a>
+                  <div *ngIf="dropdown.isDropdown" class="dropdown-menu show side-dropdown">
+                    <ul class="navbar-nav nav">
+                      <li *ngFor="let dropdownItem of dropdown.dropdown; let y = index" class="nav-item w-100">
+                        <a href="#" class="nav-link w-100 d-flex">{{ trans.fullScreenNavbarTexts[2]?.['collapseItem']?.[i]?.['collapseItem']?.[y]?.['text'] }}</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-nav-item d-flex dropdown"  (mouseenter)="navLinkEnter(3)"  (mouseleave)="navLinkLeave()">
+            <a href="#" class="nav-link main-nav-link d-flex justify-content-center h-100" [ngClass]="{ 'text-white': navbarItems[3].white, 'navbarHover': !navbarItems[3].white }">
+              <span class="align-self-center">{{ 'navbarItems.contact'|translate }}</span>
+            </a>
+            <div class="dropdown-menu main-dropdown-menu d-flex flex-column">
+              <ul class="nav navbar-nav flex-column d-flex w-100">
+                <li *ngFor="let dropdown of normalDropdownList[2]; let i = index"
+                    class="nav-item d-flex w-100"
+                    [ngClass]="{'dropdown': dropdown.isDropdown}"
+                    (mouseenter)="dropdownLinkHover(2, i)"
+                    (mouseleave)="dropdownLinkReset(2, i)"
+                >
+                  <a href="#" class="nav-link d-flex w-100" [ngClass]="{'text-white': dropdown.linkHovered}">
+                    {{ trans.fullScreenNavbarTexts[3]?.['collapseItem']?.[i]?.['text'] }}
+                    <span class="navigation-icon ms-auto" *ngIf="dropdown.isDropdown">
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </span>
+                  </a>
+                  <div *ngIf="dropdown.isDropdown" class="dropdown-menu show side-dropdown">
+                    <ul class="navbar-nav nav">
+                      <li *ngFor="let dropdownItem of dropdown.dropdown; let y = index" class="nav-item w-100">
+                        <a href="#" class="nav-link w-100 d-flex">{{ trans.fullScreenNavbarTexts[3]?.['collapseItem']?.[i]?.['collapseItem']?.[y]?.['text'] }}</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="purchase nav-link d-inline-block bg-white">
+        {{ 'navbarItems.purchase'|translate }}
+        <span class="purchase-ball d-inline-block"></span>
+      </a>
+    </div>
+  </nav>
+</section>
